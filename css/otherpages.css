@@ -12,17 +12,82 @@ h1 {
   padding: 50px 0;
   text-align: center;
 }
+
+.words {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-size: 80px;
+}
+p {
+	font-size: 60px;
+}
+.words li {
+	font-size: 60px;
+}
+.more {
+	display: flex;
+	justify-content: space-evenly;
+}
+.more a:hover {
+  background-color: gray;
+}
+a {
+	text-decoration: none;
+  	font-weight: bold;
+}
+.parallaxback {
+  /* The image used */
+  background-image: url("../img/me.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+.parallaxedu {
+  /* The image used */
+  background-image: url("../img/grad-me.JPG");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+.parallaxgym {
+  /* The image used */
+  background-image: url("../img/first.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
 #text{
     text-align: center;
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:linear;
     -webkit-animation-name:orbit;
-    -webkit-animation-duration:10s;
+    -webkit-animation-duration:1.5s;
 }
 
 @-webkit-keyframes orbit { 
 from { -webkit-transform:rotate(0deg) } 
-to { -webkit-transform:rotate(360deg) } 
+to { -webkit-transform:rotate(5deg) } 
 }
 
 .container {
@@ -31,6 +96,9 @@ to { -webkit-transform:rotate(360deg) }
   grid-row-gap: 15px;
   grid-template-rows: 30px auto auto auto auto;
   width: 100vw; 
+}
+.current {
+	background-color: red;
 }
 .nav {
   grid-column: 1/-1;

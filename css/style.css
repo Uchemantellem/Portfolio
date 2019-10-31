@@ -18,7 +18,9 @@ html, body {
   grid-template-rows: 30px auto auto auto auto;
   width: 100vw; 
 }
-
+.current {
+  background-color: red;
+}
 .nav {
   grid-column: 1/-1;
   grid-row: 1/2;
@@ -150,6 +152,9 @@ h2 {
   margin: 10px;
   width: 300px;
   height: 420px;
+}
+.form {
+  text-align: center;
 }
 
 
