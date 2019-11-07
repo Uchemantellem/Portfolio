@@ -148,7 +148,7 @@ h1 {
   grid-row: 4/5;
 }
 .gal {
-  grid-column: 3/4;
+  grid-column: 2/3;
   grid-row: 5/7;
 }
 .information {
@@ -165,14 +165,13 @@ h2 {
     padding: 5px;
 }
 .gallery{
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-            justify-content: center;
-    min-height: 500px;
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 0px 30px;
+  }
+  #image11 {
+    position: relative;
+    left: 50%;
   }
 
 .gallery > img{
