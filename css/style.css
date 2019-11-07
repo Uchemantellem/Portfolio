@@ -36,6 +36,7 @@ a {
 }
 nav ul{
   list-style-type: none;
+  background-color: #ddd;
 }
 
 nav li{
@@ -46,7 +47,7 @@ nav li{
 nav a{
   color: black;
   font-weight: bold;
-  text-decoration: none/*Your code here - remove the underline*/;
+  text-decoration: none;
 }
 
 h1 {
@@ -269,11 +270,6 @@ h2 {
     padding: 30px;
   }
 
-  h2 {
-      font-size: 1.5em;
-      text-align: center;
-      padding: 5px;
-  }
   .gallery{
       display: grid;
       grid-template-columns: auto auto;

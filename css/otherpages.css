@@ -129,6 +129,7 @@ to { -webkit-transform:rotate(5deg) }
 }
 nav ul{
   list-style-type: none;
+  background-color: #ddd;
 }
 
 nav li{
@@ -139,7 +140,7 @@ nav li{
 nav a{
   color: black;
   font-weight: bold;
-  text-decoration: none/*Your code here - remove the underline*/;
+  text-decoration: none;
 }
 /*kiiijj*/
 .dropdown {
@@ -181,6 +182,45 @@ nav a{
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+}
+@media screen and (min-width: 400px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 30px auto auto auto 30px;*/
+    width: 100vw; 
+  }
+  .nav {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: #ddd;
+    padding: 20px 0; 
+    text-align: center; 
+  }
+  .dropbtn {
+    font-size: inherit;  
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: #ddd;
+    font-family: inherit;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 3px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .words li {
+    font-size: 20px;
+  }
+  .more {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 800px){
