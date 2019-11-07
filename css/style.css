@@ -8,6 +8,12 @@ html, body {
   font-size: 18px;
   scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .title {
   text-align: center;
 }
@@ -15,7 +21,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 15px;
-  grid-template-rows: 30px auto auto auto auto;
+  /*grid-template-rows: 30px auto auto auto auto;*/
   width: 100vw; 
 }
 .current {
@@ -49,6 +55,27 @@ h1 {
   padding: 50px 0;
   text-align: center;
 }
+
+.skip a {
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus {
+  position: absolute;
+  top: 0;
+}
+
+:focus {
+  border: 2px solid black;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -81,10 +108,10 @@ h1 {
   background-color: gray;
 }
 .dropbtn {
-  font-size: 16px;  
+  font-size: inherit;  
   border: none;
   outline: none;
-  text-align: center
+  text-align: center;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -157,7 +184,109 @@ h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 400px){
 
+  h1 {
+    font-size: 50px;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 3px;
+  }
+  p {
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    /*grid-template-rows: 30px auto auto auto 30px;*/
+    width: 100vw; 
+  }
+  .nav {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: #ddd;
+    padding: 20px 0; 
+    text-align: center; 
+  }
+  .dropbtn {
+    font-size: inherit;  
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: #ddd;
+    font-family: inherit;
+    margin: 0;
+  }
+/*  .title {
+    text-align: center;
+  }*/
+  .pic-back {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    overflow: hidden;
+    max-height: 700px;
+  }
+  .back {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .pic-ed {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    overflow: hidden;
+    max-height: 700px;
+  }
+  .ed {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .pic-gym {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    overflow: hidden;
+    max-height: 700px;
+  }
+  .gym {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .gal {
+    grid-column: 1/4;
+    grid-row: 5/7;
+  }
+  .information {
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    padding: 30px;
+  }
+
+  h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: 5px;
+  }
+  .gallery{
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 0px 30px;
+    }
+  #image11 {
+    position: relative;
+    left: 50%;
+  }
+  .form {
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 800px){
   .container {
@@ -225,5 +354,21 @@ h2 {
     overflow: hidden;
     background-color: black;
     text-align: center;
+  }
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+            justify-content: center;
+    min-height: 500px;
+  }
+
+  .gallery > img{
+    border: 10px #50C7C7 solid;
+    margin: 10px;
+    width: 300px;
+    height: 420px;
   }
 }
