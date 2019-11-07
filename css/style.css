@@ -276,8 +276,8 @@ h2 {
       padding: 0px 30px;
     }
   #image11 {
-    /*position: relative;*/
-    /*left: 50%;*/
+    position: relative;
+    left: 50%;
   }
   .form {
     text-align: center;
@@ -359,6 +359,8 @@ h2 {
     -webkit-box-pack: center;
             justify-content: center;
     min-height: 500px;
+    grid-template-columns: unset;
+    padding: unset;
   }
 
   .gallery > img{
@@ -366,5 +368,9 @@ h2 {
     margin: 10px;
     width: 300px;
     height: 420px;
+  }
+  #image11 {
+    position: static;
+
   }
 }
