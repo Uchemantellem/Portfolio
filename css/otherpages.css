@@ -35,6 +35,7 @@ h1 {
 
 .words {
 	text-align: center;
+  margin-top: 125px;
 }
 
 h2 {
@@ -54,7 +55,7 @@ p {
 a {
 	text-decoration: none;
   font-weight: bold;
-  font-size: 0.6em;
+  /*font-size: 0.6em;*/
 }
 .parallaxback {
   /* The image used */
@@ -111,7 +112,7 @@ to { -webkit-transform:rotate(5deg) }
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 15px;
+  /*grid-row-gap: 15px;*/
   grid-template-rows: 30px auto auto auto auto;
   width: 100vw; 
 }
@@ -131,7 +132,7 @@ nav ul{
 }
 
 nav li{
-  display: inline-block;
+  display: block;
   padding-right: 20px;
 }
 
@@ -182,6 +183,14 @@ nav a{
   margin: 0;
 }
 @media screen and (min-width: 400px) {
+  .words {
+    text-align: center;
+    margin-top: 60px;
+  }
+  nav li{
+    display: inline-block;
+    padding-right: 20px;
+  }
   h1 {
     font-size: 50px;
     line-height: 1;
@@ -228,6 +237,14 @@ nav a{
 }
 
 @media screen and (min-width: 800px){
+  .words {
+    text-align: center;
+    margin-top: -60px;
+  }
+  nav li{
+    display: inline-block;
+    padding-right: 20px;
+  }
   h1 {
     font-size: 50px;
     line-height: 1;
@@ -237,7 +254,7 @@ nav a{
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 15px;
+    /*grid-row-gap: 15px;*/
     grid-template-rows: 30px auto auto auto 30px;
     width: 100vw; 
   }
@@ -251,12 +268,61 @@ nav a{
   }
 
   h2 {
-    text-align: center;
     font-size: 80px;
+    text-align: left;
+
   }
   p {
+    text-align: left;
     font-size: 60px;
   }
   .words li {
     font-size: 60px;
+    text-align: left;
   }
+  #first-words {
+    text-align: left;
+    position: relative;
+    top: 5em;
+  }
+  #first-words-edu {
+    text-align: left;
+    position: relative;
+    top: 7.5em;
+  }
+  #first-words-gym {
+    text-align: left;
+    position: relative;
+    top: 7.2em;
+  }
+  #second-words {
+    text-align: left;
+    position: relative;
+  }
+  #edu-p {
+    margin-top: 100px;
+  }
+  #back-p {
+    margin-top: 35px;
+  }
+  #gym-p {
+    margin-top: 75px;
+  }
+  .more {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .parallaxback {
+  /* The image used */
+  background-image: url("../img/me.jpg");
+
+  /* Set a specific height */
+  min-height: 350px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+}
