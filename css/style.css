@@ -151,7 +151,7 @@ h1 {
   margin: 0;
 }
 .pic-back {
-  grid-column: 1/-1;
+  grid-column: 2/4;
   grid-row: 2/3;
   overflow: hidden;
   max-height: 700px;
@@ -171,7 +171,7 @@ h1 {
   grid-row: 3/4;
 }
 .pic-gym {
-  grid-column: 1/-1;
+  grid-column: 2/4;
   grid-row: 4/5;
   overflow: hidden;
   max-height: 700px;
@@ -421,5 +421,25 @@ h2 {
   .form {
     text-align: center;
     position: unset;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: none;
+    transition: none;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
   }
 }
