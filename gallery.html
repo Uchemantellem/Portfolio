@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="css/html5reset.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/lightbox.css">
         <link href="css/mixitup.css" rel="stylesheet"/>
 
         <title>Gallery Page</title>
@@ -37,17 +38,17 @@
         </div>
 
         <div class="container">
-            <img id="image3" src="./img/horse.jpeg" alt="decoration" class="mix green" />
-            <img id="image1" src="./img/4thme.jpg" alt="decoration" class ="mix pink" />
-		    <img id="image2" src="./img/grad-meandkev.jpeg" alt="decoration" class="mix blue"/>
-		    <img id="image4" src="./img/grad-menbae.JPG" alt="decoration" class="mix blue"/>
-		    <img id="image5" src="./img/wedding.jpeg" alt="decoration" class="mix blue" />
-		    <img id="image6" src="./img/volksfest.jpeg" alt="decoration" class="mix pink"/>
-		    <img id="image7" src="./img/grad-meanddaniel.JPG" alt="decoration" class="mix blue" />
-		    <img id="image8" src="./img/teamuche.jpeg" alt="decoration" class="mix blue" />
-		    <img id="image9" src="./img/team.JPG" alt="decoration" class="mix blue"/>
-		    <img id="image10" src="./img/meandmitchell.jpg" alt="decoration" class="mix blue" />
-		    <img id="image11" src="./img/grad-me.JPG" alt="decoration" class ="mix pink"/>
+            <a href="./img/horse.jpeg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image3" src="./img/horse.jpeg" alt="decoration" class="mix green" /></a>
+            <a href="./img/4thme.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image1" src="./img/4thme.jpg" alt="decoration" class ="mix pink" /></a>
+		    <a href="./img/grad-meandkev.jpeg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image2" src="./img/grad-meandkev.jpeg" alt="decoration" class="mix blue"/></a>
+		    <a href="./img/grad-menbae.JPG" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image4" src="./img/grad-menbae.JPG" alt="decoration" class="mix blue"/></a>
+		    <a href="./img/wedding.jpeg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image5" src="./img/wedding.jpeg" alt="decoration" class="mix blue" /></a>
+		    <a href="./img/volksfest.jpeg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image6" src="./img/volksfest.jpeg" alt="decoration" class="mix pink"/></a>
+		    <a href="./img/grad-meanddaniel.JPG" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image7" src="./img/grad-meanddaniel.JPG" alt="decoration" class="mix blue" /></a>
+		    <a href="./img/teamuche.jpeg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image8" src="./img/teamuche.jpeg" alt="decoration" class="mix blue" /></a>
+		    <a href="./img/team.JPG" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image9" src="./img/team.JPG" alt="decoration" class="mix blue"/></a>
+		    <a href="./img/meandmitchell.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image10" src="./img/meandmitchell.jpg" alt="decoration" class="mix blue" /></a>
+		    <a href="./img/grad-me.JPG" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img id="image11" src="./img/grad-me.JPG" alt="decoration" class ="mix pink"/></a>
 
             <div class="gap"></div>
             <div class="gap"></div>
@@ -107,5 +108,6 @@
                 mixer.filter(selectorString);
             });
         </script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>
