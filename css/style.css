@@ -216,6 +216,20 @@ h2 {
 .gallery > img:hover {
   transform: rotateY(180deg);
 }
+#moregalls {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    padding: 30px;
+}
+#moregalls a {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
 .form {
   position: relative;
   left: 50%;
@@ -319,6 +333,20 @@ h2 {
     position: relative;
     left: 50%;
   }
+  #moregalls {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    padding: 30px;
+  }
+  #moregalls a {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
   .form {
     text-align: center;
     position: unset;
@@ -420,9 +448,19 @@ h2 {
   }
   #moregalls {
     text-align: center;
-    grid-column: 3/4;
-    
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    padding: 30px;
   }
+  #moregalls a {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
+    
   .form {
     text-align: center;
     position: unset;
